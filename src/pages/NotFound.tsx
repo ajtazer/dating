@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import heroBackground from "@/assets/hero-background.jpg";
 
 const NotFound = () => {
   const location = useLocation();
@@ -30,27 +31,21 @@ const NotFound = () => {
         fontFamily: "'Sora', sans-serif",
       }}
     >
-      {/* Soft glowing blurry background gradient */}
-      <div className="absolute inset-0 z-0">
-        <div
-          className="w-full h-full"
-          style={{
-            background:
-              "radial-gradient(circle at top left, #00ffff33, transparent), radial-gradient(circle at bottom right, #ff5c8d33, transparent)",
-            filter: "blur(80px)",
-            opacity: 0.6,
-            width: "100%",
-            height: "100%",
-          }}
-        ></div>
-      </div>
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      />
+      
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/80" />
 
       <div className="z-10 max-w-xl">
         <h1 className="text-7xl font-bold text-white mb-4 animate-pulse">404</h1>
         <p className="text-xl text-[#CCCCCC] mb-6 leading-relaxed">
-        Oops. This page doesn’t exist.
+        Oops. This page doesn't exist.
           <br />
-          Just like the “closure” u thot u deserved.
+          Just like the "closure" u thot u deserved.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

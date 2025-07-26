@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import kirti from "@/assets/kitty.jpg";
 
 export const ChatMockup = () => {
   const [currentMessage, setCurrentMessage] = useState(0);
@@ -7,15 +8,11 @@ export const ChatMockup = () => {
   const chatRef = useRef(null);
 
   const messages = [
-    { text: "Hey… I know I’m the last person you expected to hear from. But I’ve been thinking about you. A lot.", sent: true, delay: 500 },
-    { text: "Took you only 97 days and 4 hours.", sent: false, delay: 1000 },
-    { text: "Not that I was counting.", sent: false, delay: 1000 },
-    { text: "I messed up. I thought distance would help… but it only made me miss you more.", sent: true, delay: 1000 },
-    { text: "I told you, silence is louder than fights.", sent: false, delay: 1000 },
-    { text: "I know. But if there’s even 1% left…", sent: true, delay: 1000 },
-    { text: "Can we try again? Properly this time?", sent: true, delay: 500 },
-    { text: "1% was never the problem, Katki.", sent: false, delay: 1000 },
-    { text: "It’s the 99% that still hurts.", sent: false, delay: 1000 },
+    { text: "You’re getting on my needles", sent: false, delay: 500 },
+    { text: "Nerves*", sent: false, delay: 700 },
+    { text: "One more text and I’ll file a complaint.", sent: false, delay: 1000 },
+    { text: "Won’t you meet me just one more time?", sent: true, delay: 1200 },
+    
   ];
 
   useEffect(() => {
@@ -95,9 +92,11 @@ export const ChatMockup = () => {
               <div className="h-full bg-gradient-to-b from-background to-muted/20 p-6 flex flex-col">
                 {/* Header */}
                 <div className="flex items-center gap-3 pb-4 border-b border-border/30">
-                  <div className="w-10 h-10 bg-secondary/20 rounded-full" />
+                  <div className="w-10 h-10 bg-secondary/20 rounded-full overflow-hidden">
+                    <img src={kirti} alt="Kitty" className="w-full h-full object-cover" />
+                  </div>
                   <div>
-                    <div className="font-medium">Ketki</div>
+                    <div className="font-medium">Kitty</div>
                     <div className="text-xs text-muted-foreground">Online</div>
                   </div>
                 </div>
