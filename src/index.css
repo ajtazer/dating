@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  #lovable-badge {
+    display: none !important;
+  }
+  :root {
+    /* Core theme colors */
+    --background: 209 15% 4%;
+    --foreground: 0 0% 100%;
+
+    --card: 209 15% 6%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 209 15% 6%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Primary: Cyan accent for tech elements */
+    --primary: 180 100% 50%;
+    --primary-foreground: 209 15% 4%;
+
+    /* Secondary: Neon pink for emotional elements */
+    --secondary: 333 87% 67%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 209 15% 12%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 333 87% 67%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 209 15% 15%;
+    --input: 209 15% 15%;
+    --ring: 180 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(180 100% 50% / 0.3), hsl(333 87% 67% / 0.3));
+    --gradient-secondary: linear-gradient(180deg, hsl(209 15% 4%), hsl(209 15% 6%));
+    --shadow-glow: 0 0 40px hsl(180 100% 50% / 0.3);
+    --shadow-pink-glow: 0 0 40px hsl(333 87% 67% / 0.3);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 209 15% 6%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 209 15% 4%;
+    --sidebar-accent: 209 15% 12%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 209 15% 15%;
+    --sidebar-ring: 180 100% 50%;
+  }
+
+  .dark {
+    /* Same colors for dark mode since we're using a dark theme */
+    --background: 209 15% 4%;
+    --foreground: 0 0% 100%;
+    --card: 209 15% 6%;
+    --card-foreground: 0 0% 95%;
+    --popover: 209 15% 6%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 180 100% 50%;
+    --primary-foreground: 209 15% 4%;
+    --secondary: 333 87% 67%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 209 15% 12%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 333 87% 67%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 209 15% 15%;
+    --input: 209 15% 15%;
+    --ring: 180 100% 50%;
+    --sidebar-background: 209 15% 6%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 209 15% 4%;
+    --sidebar-accent: 209 15% 12%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 209 15% 15%;
+    --sidebar-ring: 180 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+
+  /* Custom animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes glow {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes typing-dots {
+    0%, 60%, 100% { transform: translateY(0); }
+    30% { transform: translateY(-10px); }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 3s ease-in-out infinite;
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+
+  .animate-typing-dots {
+    animation: typing-dots 1.4s infinite;
+  }
+
+  /* Gradient backgrounds */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+
+  /* Glow effects */
+  .glow-cyan {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .glow-pink {
+    box-shadow: var(--shadow-pink-glow);
+  }
+
+  /* Smooth transitions */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+}
