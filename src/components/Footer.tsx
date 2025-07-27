@@ -1,4 +1,4 @@
-import { Mail, Twitter, Github, Heart } from "lucide-react";
+import { Mail, Twitter, Github, Heart, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Footer = () => {
@@ -24,9 +24,14 @@ export const Footer = () => {
                   <Twitter className="w-5 h-5" />
                 </Button>
               </a>
-              <a href="https://github.com/ajtazer" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/ajtazer/dating" target="_blank" rel="noopener noreferrer">
                 <Button variant="ghost" size="icon">
                   <Github className="w-5 h-5" />
+                </Button>
+              </a>
+              <a href="http://instagram.com/anujrawatazer" target="_blank" rel="noopener noreferrer">
+                <Button variant="ghost" size="icon">
+                  <Instagram className="w-5 h-5" />
                 </Button>
               </a>
             </div>
@@ -34,11 +39,13 @@ export const Footer = () => {
 
           <div className="text-center md:text-right">
             <div className="mb-6">
-              <Button variant="hero" size="lg" className="mb-4">
-                Join the Waitlist
-              </Button>
+              <a href="https://chat.whatsapp.com/JsKHqVfGIFtGYnSKSuNaXF?mode=ac_t" target="_blank" rel="noopener noreferrer">
+                <Button variant="hero" size="lg" className="mb-4">
+                join us
+                </Button>
+              </a>
               <p className="text-sm text-muted-foreground">
-              Join me if you’ve ever missed someone who’s gone.
+              if you’ve ever missed someone who’s gone.
               </p>
             </div>
             

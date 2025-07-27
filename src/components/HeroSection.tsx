@@ -10,7 +10,7 @@ export const HeroSection = () => {
   const [message, setMessage] = useState("");
   const [isValidEmail, setIsValidEmail] = useState(true);
 
-  const validateEmail = (email: string) => {
+  const validateEmail = (email: string) => {  
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
