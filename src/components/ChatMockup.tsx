@@ -8,10 +8,12 @@ export const ChatMockup = () => {
   const chatRef = useRef(null);
 
   const messages = [
+    { text: "heloo", sent: true, delay: 500 },
+    { text: "pls unblock me", sent: true, delay: 500 },
     { text: "You’re getting on my needles", sent: false, delay: 500 },
     { text: "Nerves*", sent: false, delay: 700 },
     { text: "One more text and I’ll file a complaint.", sent: false, delay: 1000 },
-    { text: "Won’t you meet me just one more time?", sent: true, delay: 1200 },
+    { text: "Won’t you meet me just one more time?", sent: true, delay: 2000 },
     
   ];
 
