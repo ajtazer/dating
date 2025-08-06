@@ -14,7 +14,7 @@ export const Footer = () => {
             Even without support, I’ll keep building because I know what it means to me.
             </p>
             <div className="flex gap-4">
-              <a href="mailto:hello@tazer.dating" target="_blank" rel="noopener noreferrer">
+              <a href="mailto:tazeryeah@gmail.com" target="_blank" rel="noopener noreferrer">
                 <Button variant="ghost" size="icon">
                   <Mail className="w-5 h-5" />
                 </Button>
