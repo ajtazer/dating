@@ -118,7 +118,7 @@ export const HeroSection = () => {
               variant="nostalgic"
               size="lg"
               onClick={() => {
-                window.location.href = "mailto:admin@tazer.dating?subject=I%20wanna%20build%20with%20you%20gang%20%F0%9F%92%94&body=Wyd%20gang%2C%0A%0AI%20came%20across%20your%20type%20shi%20and%20I%E2%80%99d%20love%20to%20be%20part%20of%20it.%20Here's%20a%20little%20about%20me%3A%0A%0A%F0%9F%92%BC%20LinkedIn%3A%20https%3A%2F%2Fwww.linkedin.com%2F_______%20%0A%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB%20GitHub%3A%20https%3A%2F%2Fgithub.com%2F______%0A%E2%9D%A4%EF%B8%8F%20Why%20I%20wanna%20join%3A%20%5Byour%20reason%20here%20%E2%80%94%20maybe%20a%20story%2C%20maybe%20just%20vibes%5D%0A%0ALet%20me%20know%20how%20I%20can%20help!%0A%0A%E2%80%93%20kimi%20no%20na%20wa%0A";
+                window.location.href = "mailto:tazeryeah@gmail.com?subject=I%20wanna%20build%20with%20you%20gang%20%F0%9F%92%94&body=Wyd%20gang%2C%0A%0AI%20came%20across%20your%20type%20shi%20and%20I%E2%80%99d%20love%20to%20be%20part%20of%20it.%20Here's%20a%20little%20about%20me%3A%0A%0A%F0%9F%92%BC%20LinkedIn%3A%20https%3A%2F%2Fwww.linkedin.com%2F_______%20%0A%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB%20GitHub%3A%20https%3A%2F%2Fgithub.com%2F______%0A%E2%9D%A4%EF%B8%8F%20Why%20I%20wanna%20join%3A%20%5Byour%20reason%20here%20%E2%80%94%20maybe%20a%20story%2C%20maybe%20just%20vibes%5D%0A%0ALet%20me%20know%20how%20I%20can%20help!%0A%0A%E2%80%93%20kimi%20no%20na%20wa%0A";
               }}
             >
               Help me build
